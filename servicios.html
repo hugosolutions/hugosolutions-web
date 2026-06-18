@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Servicios | HUGO SOLUTIONS</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="icon" href="imagenes/logo.ico">
+
+<style>
+
+:root{
+    --primary:#0d47c7;
+    --dark:#04153f;
+}
+
+body{
+    font-family:"Segoe UI",sans-serif;
+}
+
+.social-icons{
+    margin-top:20px;
+}
+
+.social-icons a{
+
+    display:inline-flex;
+
+    justify-content:center;
+    align-items:center;
+
+    width:50px;
+    height:50px;
+
+    margin:0 8px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:1.3rem;
+
+    text-decoration:none;
+
+    transition:.3s;
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-5px);
+
+    background:white;
+
+    color:#0d47c7;
+}
+
+.navbar{
+    background:#042a84;
+}
+
+.navbar-brand{
+    color:white !important;
+    font-weight:700;
+}
+.navbar-brand small{
+    display:block;
+    font-size:.8rem;
+    font-weight:400;
+}
+
+.logo-navbar{
+    width:55px;
+}
+
+.nav-link{
+    color:white !important;
+}
+
+.hero-servicios{
+
+    background:
+        linear-gradient(
+            rgba(4,42,132,.85),
+            rgba(13,71,199,.85)
+        ),
+        url("imagenes/fondoTec.png");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+
+    padding:120px 0;
+}
+
+.hero-servicios h1{
+    font-size:4rem;
+    font-weight:800;
+}
+
+.hero-servicios p{
+    font-size:1.3rem;
+    max-width:800px;
+    margin:auto;
+}
+
+.section-title{
+    color:#06174f;
+    font-weight:800;
+}
+
+.service-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    height:100%;
+
+    transition:.3s;
+
+    border:1px solid #e9e9e9;
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.10);
+}
+
+.service-icon{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:2rem;
+
+    margin-bottom:25px;
+}
+
+.benefit-box{
+
+    padding:30px;
+}
+
+.benefit-box i{
+
+    color:var(--primary);
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+}
+
+.cta{
+
+    background:
+        linear-gradient(
+            135deg,
+            #0d47c7,
+            #08369b
+        );
+
+    color:white;
+
+    padding:80px 0;
+}
+
+.btn-contacto{
+
+    background:white;
+
+    color:#0d47c7;
+
+    font-weight:bold;
+
+    border-radius:12px;
+
+    padding:15px 35px;
+
+    text-decoration:none;
+}
+
+footer{
+
+    background:#04153f;
+
+    color:white;
+
+    padding:40px 0;
+}
+
+.social-icons a{
+
+    color:white;
+
+    margin:0 10px;
+
+    font-size:1.5rem;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg">
+
+<div class="container">
+
+<a class="navbar-brand d-flex align-items-center" href="index.html">
+
+<img
+src="imagenes/HugoSolutionsLogo.png"
+alt="HUGO SOLUTIONS"
+class="logo-navbar">
+
+<div class="ms-3">
+
+HUGO SOLUTIONS
+
+<small>
+Soluciones de Software y Facturación Electrónica
+</small>
+
+</div>
+
+</a>
+
+<div class="collapse navbar-collapse">
+
+<ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="soporte.html">Soporte</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="politica-privacidad.html">Privacidad</a>
+                    </li>
+
+                </ul>
+
+</div>
+
+</div>
+
+</nav>
+
+<section class="hero-servicios text-center">
+
+<div class="container">
+
+<h1>Nuestros Servicios</h1>
+
+<p class="mt-4">
+
+Soluciones tecnológicas diseñadas para
+impulsar la productividad y el crecimiento
+de tu empresa.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="py-5">
+
+<div class="container">
+
+<div class="row g-4">
+
+<div class="col-lg-4">
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-file-invoice"></i>
+</div>
+
+<h3>Facturación Electrónica</h3>
+
+<p>
+
+Implementación de sistemas e-CF compatibles
+con la DGII para empresas y comercios.
+
+</p>
+
+<ul>
+
+<li>Integración DGII</li>
+<li>e-CF</li>
+<li>Notas de Crédito</li>
+<li>Soporte Especializado</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-code"></i>
+</div>
+
+<h3>Desarrollo de Software</h3>
+
+<p>
+
+Aplicaciones personalizadas para ventas,
+inventario, administración y automatización.
+
+</p>
+
+<ul>
+
+<li>Sistemas de Ventas</li>
+<li>Inventario</li>
+<li>ERP</li>
+<li>Automatización</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<div class="col-lg-4">
+
+<div class="service-card">
+
+<div class="service-icon">
+<i class="fa-solid fa-headset"></i>
+</div>
+
+<h3>Soporte Técnico</h3>
+
+<p>
+
+Acompañamiento continuo para garantizar
+la estabilidad de tus sistemas.
+
+</p>
+
+<ul>
+
+<li>Soporte Remoto</li>
+<li>Mantenimiento</li>
+<li>Capacitación</li>
+<li>Asistencia Continua</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="bg-light py-5">
+
+<div class="container text-center">
+
+<h2 class="section-title mb-5">
+
+¿Por qué elegir HUGO SOLUTIONS?
+
+</h2>
+
+<div class="row">
+
+<div class="col-md-3 benefit-box">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h5>Seguridad</h5>
+
+<p>
+Protección de datos y procesos.
+</p>
+
+</div>
+
+<div class="col-md-3 benefit-box">
+
+<i class="fa-solid fa-bolt"></i>
+
+<h5>Eficiencia</h5>
+
+<p>
+Automatización de procesos.
+</p>
+
+</div>
+
+<div class="col-md-3 benefit-box">
+
+<i class="fa-solid fa-users"></i>
+
+<h5>Experiencia</h5>
+
+<p>
+Soluciones adaptadas al cliente.
+</p>
+
+</div>
+
+<div class="col-md-3 benefit-box">
+
+<i class="fa-solid fa-headset"></i>
+
+<h5>Soporte</h5>
+
+<p>
+Acompañamiento permanente.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="cta text-center">
+
+<div class="container">
+
+<h2 class="mb-4">
+
+¿Necesitas una solución para tu empresa?
+
+</h2>
+
+<a href="contacto.html"
+class="btn-contacto">
+
+Contáctanos
+
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="container text-center">
+
+        <h5>HUGO SOLUTIONS</h5>
+
+        <p>
+            Soluciones de Software y Facturación Electrónica
+        </p>
+
+        <div class="social-icons">
+
+            <a href="https://wa.me/18093536695"
+                target="_blank">
+
+                <i class="fab fa-whatsapp"></i>
+
+            </a>
+
+            <a href="https://www.facebook.com/share/1DGaXRmoEG/"
+                target="_blank">
+
+                <i class="fab fa-facebook-f"></i>
+
+            </a>
+
+            <a href="https://www.instagram.com/hugosolutions_?igsh=NjhpMXFuaDR0ZDQ0"
+                target="_blank">
+
+                <i class="fab fa-instagram"></i>
+
+            </a>
+
+            <a href="https://youtube.com/@hugosolutions?si=26KuFnt-ovDU1vaO"
+                target="_blank">
+
+                <i class="fab fa-youtube"></i>
+
+            </a>
+
+        </div>
+
+        <p class="mt-4 mb-0">
+            © 2026 HUGO SOLUTIONS. Todos los derechos reservados.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
